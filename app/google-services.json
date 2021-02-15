@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1099235666980",
+    "project_id": "movie-database-ebd2d",
+    "storage_bucket": "movie-database-ebd2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099235666980:android:feb0d27c1c911563c27cb1",
+        "android_client_info": {
+          "package_name": "fr.epsi.clem.eval.moviedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1099235666980-sn8211un570mr8ejbo33m8281dt04uqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlLh43ntV3FUqqNgCRYb1NV6egC_upKK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1099235666980-sn8211un570mr8ejbo33m8281dt04uqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itLeftArrow"
+        android:icon="@drawable/ic_left_arrow"
+        android:title="@string/left_arrow"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/itHome"
+        android:icon="@drawable/ic_home_icon_silhouette"
+        android:title="@string/home"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/itRightArrow"
+        android:icon="@drawable/ic_right_arrow"
+        android:title="@string/right_arrow"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+</menu>

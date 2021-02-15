@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Movie Database</string>
+    <string name="left_arrow">Back</string>
+    <string name="home">Home</string>
+    <string name="right_arrow">Next</string>
+</resources>
