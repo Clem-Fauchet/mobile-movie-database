@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,7 +37,7 @@ public class MainListActivity extends Activity {
 
     RecyclerView rvMovieList;
     MovieAdapter movieAdapter;
-    List<MovieResponse> movieModelList = new ArrayList<>();
+    List<MovieResponse> movieModelList = new ArrayList<MovieResponse>();
 
     //nav bar
     private BottomNavigationView btmNavBar;
@@ -87,7 +88,7 @@ public class MainListActivity extends Activity {
         rvMovieList = findViewById(R.id.rvMovieList);
         movieAdapter = new MovieAdapter(movieModelList);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 2, LinearLayoutManager.VERTICAL, false);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 2, GridLayoutManager.VERTICAL, false);
         rvMovieList.setLayoutManager(gridLayoutManager);
         rvMovieList.setAdapter(movieAdapter);
 

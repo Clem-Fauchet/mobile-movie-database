@@ -18,12 +18,10 @@ import fr.epsi.clem.eval.moviedatabase.viewholder.MovieViewHolder;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieViewHolder> {
 
-
     private View.OnClickListener onClickListener;
-
     private List<MovieResponse> movieData;
 
-    public MovieAdapter( List<MovieResponse> movieData) {
+    public MovieAdapter(List<MovieResponse> movieData) {
         this.movieData = movieData;
     }
 
@@ -31,8 +29,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieViewHolder> {
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        Context context = parent.getContext();
-        LayoutInflater inflater = LayoutInflater.from(context);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View movieView = inflater.inflate(R.layout.custom_grid_layout, parent, false);
 
         movieView.setOnClickListener(new View.OnClickListener() {
