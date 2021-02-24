@@ -34,7 +34,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieViewHolder> {
 
         movieView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)  {
+            public void onClick(View v) {
                 onClickListener.onClick(v);
             }
         });

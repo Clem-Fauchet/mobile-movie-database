@@ -41,8 +41,8 @@ public class WelcomeActivity extends Activity {
                         return true;
                     case R.id.itRightArrow:
                         Log.d(TAG, "WelcomeActivity - navBar - onClick - NextPageToMain");
-                        startActivity(new Intent(getApplicationContext(),   MainListActivity.class ));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), MainListActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;
@@ -60,7 +60,7 @@ public class WelcomeActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "WelcomeActivity - buttonStar - onClick");
-                Intent intent = new Intent( WelcomeActivity.this, MainListActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, MainListActivity.class);
                 startActivity(intent);
             }
         });
@@ -69,7 +69,7 @@ public class WelcomeActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "WelcomeActivity - buttonGetAllMovie - onClick");
-                Intent intent = new Intent( WelcomeActivity.this, MainListActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, MainListActivity.class);
                 startActivity(intent);
             }
         });

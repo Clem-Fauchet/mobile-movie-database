@@ -66,8 +66,8 @@ public class MainListActivity extends Activity {
                     case R.id.itHome:
                     case R.id.itLeftArrow:
                         Log.d(TAG, "MainActivity - navBar - onClick - goBackToWelcome");
-                        startActivity(new Intent(getApplicationContext(), WelcomeActivity.class ));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), WelcomeActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;
@@ -105,7 +105,7 @@ public class MainListActivity extends Activity {
 
                 Log.d(TAG, "MainActivity - movieAdapter - onClick - " + position + " " + selectedMovie);
 
-                Intent intent = new Intent( MainListActivity.this, MovieDetailActivity.class);
+                Intent intent = new Intent(MainListActivity.this, MovieDetailActivity.class);
                 intent.putExtra("id", selectedMovie.getResults().get(position).getId());
                 intent.putExtra("title", selectedMovie.getResults().get(position).getTitle());
                 intent.putExtra("rating", selectedMovie.getResults().get(position).getVoteAverage());

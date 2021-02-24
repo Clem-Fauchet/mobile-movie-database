@@ -40,13 +40,13 @@ public class MovieDetailActivity extends Activity {
                 switch (item.getItemId()) {
                     case R.id.itLeftArrow:
                         Log.d(TAG, "DetailActivity - navBar - onClick - goBackToMain");
-                        startActivity(new Intent(getApplicationContext(), MainListActivity.class ));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), MainListActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.itHome:
                         Log.d(TAG, "DetailActivity - navBar - onClick - goBackToHome");
-                        startActivity(new Intent(getApplicationContext(), WelcomeActivity.class ));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), WelcomeActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;

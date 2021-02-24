@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="@id/btSelectByPopularity"
             app:layout_constraintBottom_toBottomOf="@id/btSelectByPopularity"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/btSelectByPopularity"/>
+            app:layout_constraintEnd_toEndOf="@id/btSelectByPopularity" />
 
         <Button
             android:id="@+id/btSelectByPopularity"
@@ -49,7 +49,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/btNextPage"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/btSelectByRating"/>
+            app:layout_constraintStart_toStartOf="@id/btSelectByRating" />
 
         <Button
             android:id="@+id/btPreviousPage"
@@ -86,21 +86,21 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constraint_layout"
+        android:layout_marginBottom="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMovieList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/constraint_layout"
-            android:layout_marginBottom="75dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp">
+            tools:listitem="@layout/custom_grid_layout" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvMovieList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:listitem="@layout/custom_grid_layout" />
-
-        </RelativeLayout>
+    </RelativeLayout>
 
     <include
         android:id="@+id/include2"
