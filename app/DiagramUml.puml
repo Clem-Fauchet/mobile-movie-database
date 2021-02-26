@@ -53,6 +53,7 @@ MovieViewHolder: constructor
 }
 
 class MovieListActivity {
+BottomNavigationView
 RecyclerView
 onCreate()
 generateMovie()
