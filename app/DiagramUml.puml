@@ -1,21 +1,62 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+interface IMovieApi
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
+WelcomeActivity --|> MovieListActivity
+MovieListActivity --> IMovieApi
+MovieListActivity --|> MovieResponse
+IMovieApi -> MovieResponse
+MovieResponse -> MovieDetailActivity
+MovieResponse <-- MovieAdapter
+MovieAdapter <-- MovieViewHolder
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
+IMovieApi <--> RetrofitClientMovie
+MovieListActivity <|--|> MovieDetailActivity
 
-class ArrayList {
-Object[] elementData
-size()
+interface IMovieApi {
+getMovies()
+}
+
+class RetrofitClientMovie {
+Retrofit
+Base_Url : String
+getSingleton()
+}
+
+class WelcomeActivity {
+BottomNavigationView
+onCreate()
+}
+
+class MovieDetailActivity {
+BottomNavigationView
+onCreate()
+}
+
+class MovieResponse {
+ResultsDTO: List
+getResults()
+}
+
+class MovieAdapter {
+RecyclerView
+MovieResponse: List
+onCreateViewHolder()
+onBindViewHolder()
+getItemCount()
+}
+
+class MovieViewHolder {
+RecyclerView
+MovieViewHolder: constructor
+}
+
+class MovieListActivity {
+RecyclerView
+onCreate()
+generateMovie()
+onLoad()
 }
 
 @enduml

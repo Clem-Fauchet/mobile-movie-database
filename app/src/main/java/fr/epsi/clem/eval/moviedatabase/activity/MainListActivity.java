@@ -132,8 +132,8 @@ public class MainListActivity extends Activity {
                     btNextPage.setVisibility(View.VISIBLE);
                 }
 
-                movieApi = RetroFitClientMovie.getSingleton().create(IMovieApi.class);
-                generateMovies();
+                System.out.println(PAGE + CATEGORY + movieModelList);
+                //generateMovies();
             }
         });
 
@@ -150,8 +150,8 @@ public class MainListActivity extends Activity {
                     btPreviousPage.setVisibility(View.VISIBLE);
                 }
 
-                movieApi = RetroFitClientMovie.getSingleton().create(IMovieApi.class);
-                generateMovies();
+                System.out.println(PAGE + CATEGORY + movieModelList);
+                //generateMovies();
             }
         });
 
@@ -163,8 +163,8 @@ public class MainListActivity extends Activity {
                 PAGE = 1;
                 CATEGORY = "top_rated";
 
-                movieApi = RetroFitClientMovie.getSingleton().create(IMovieApi.class);
-                generateMovies();
+                System.out.println(PAGE + CATEGORY + movieModelList);
+                //generateMovies();
             }
         });
 
@@ -175,8 +175,8 @@ public class MainListActivity extends Activity {
                 PAGE = 1;
                 CATEGORY = "popular";
 
-                movieApi = RetroFitClientMovie.getSingleton().create(IMovieApi.class);
-                generateMovies();
+                System.out.println(PAGE + CATEGORY + movieModelList);
+                //generateMovies();
             }
         });
     }
